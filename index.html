@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Life Rpg</title>
+    <link rel="icon" href="./assets/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!--Header-->
+        <img src="./assets/avatar.png" alt="" class="avatar">
+        <h1 id="userName">Guest  </h1>
+        <h1> - Level : <span id="level">0</span></h1>
+        <a href="about.html"><button class="about" >ABOUT</button></a>
+        
+    </div>
+    <div class="todaysQuests">
+        <h1>Today's Quests</h1>
+    </div>
+    <div class="quests">
+        <div class="questTab">
+            <img src="./assets/muscle.png" alt="" class="emoji">
+            <h1 class="text">30 mins  sport</h1>
+            <button class="button" onclick="sportComplete()">Done</button>
+            
+        </div>
+        <div class="questTab">
+            <img src="./assets/book.png" alt="" class="emoji">
+            <h1 class="text">30 mins of reading</h1>
+            <button class="button" onclick="readComplete()">Done</button>
+        </div>
+        <div class="questTab">
+            <img src="./assets/clean.png" alt="" class="emoji">
+            <h1 class="text">Cleaned your room</h1>
+            <button class="button" onclick="cleanComplete()">Done</button>
+        </div>
+        <div class="questTab">
+            <img src="./assets/snake.png" alt="" class="emoji">
+            <h1 class="text">Finished a project</h1>
+            <button class="button" onclick="projectComplete()">Done</button>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    
+    
+    
+    
+    </div>
+        <div id="sportCompleted" class="toast">Quest completed 🎉 + 20xp </div>
+        <div id="readCompleted" class="toast">Quest completed 🎉 + 10xp </div>
+        <div id="cleanCompleted" class="toast">Quest completed 🎉 + 15xp </div>
+        <div id="projectCompleted" class="toast">Quest completed 🎉 + 30xp </div>
+        <div id="usernameChanged" class="toast">Username set as <span id="newUserName"></span> 💾</div>
+        <div id="xpReset" class="toast">XP and Level successfully reseted ❌</div>
+    
+    <div class="setUsername">
+            <input type="text" placeholder="Set an username"class="usernameInput" id="usernameInput">
+            <button class="apply" onclick="setUserName()">Apply</button>
+            
+    </div>
+    <button class="resetXP" onclick="resetXP()">Reset XP</button>
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

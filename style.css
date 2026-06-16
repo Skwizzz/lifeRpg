@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* HEADER */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* tout au centre */
+    gap: 15px; /* espace entre éléments */
+    padding: 10px;
+    color: white;
+    background-color: #50decb;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2),
+                0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+/* QUESTS SECTION */
+.todaysQuests {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.quests {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: #32d1bc;
+    width: 95%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+/* QUEST CARD */
+.questTab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 40px;
+}
+
+.emoji {
+    width: 40px;
+    margin-left: 5%;
+}
+
+.text {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* BUTTON */
+.button {
+    margin-left: auto;
+    color: white;
+    background-color: rgb(72, 192, 72);
+    border-radius: 30px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    font-size: 14px;
+}
+
+/* TOAST */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #32d1bc;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-family: 'Lucida Sans';
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+/* USERNAME INPUT */
+.setUsername {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 40px;
+    padding: 5px;
+}
+
+.usernameInput {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+/* APPLY BUTTON */
+.apply {
+    color: white;
+    background-color: rgb(72, 192, 72);
+    border-radius: 30px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    font-size: 14px;
+}
+
+/* RESET XP */
+.resetXP {
+    width: 90%;
+    max-width: 200px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 40px;
+    border: none;
+    background-color: red;
+    color: white;
+    height: 50px;
+    font-size: 18px;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 600px) {
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .questTab {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .text {
+        margin-left: 0;
+    }
+}
+.about{
+    border: none;
+    font-size: 20px;
+    background-color: #47c9b7;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2),
+                0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Lucida Sans';
+    
+}
