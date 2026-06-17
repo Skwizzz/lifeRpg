@@ -10,9 +10,14 @@
 <body>
     <div class="container">
         <!--Header-->
-        <img src="./assets/avatar.png" alt="" class="avatar">
+        <img src="./assets/avatar.png" alt="" class="avatar" id="avatar">
         <h1 id="userName">Guest  </h1>
         <h1> - Level : <span id="level">0</span></h1>
+        <div class="xp-container">
+        <div class="xp-bar" id="xpBar"></div>
+    </div>
+
+    <p id="xpText">0 / 50 XP</p>
         <a href="about.html"><button class="about" >ABOUT</button></a>
         
     </div>
@@ -73,12 +78,21 @@
     
     
     </div>
+
+
+        <!--TOASTS-->
+
         <div id="sportCompleted" class="toast">Quest completed 🎉 + 20xp </div>
         <div id="readCompleted" class="toast">Quest completed 🎉 + 10xp </div>
         <div id="cleanCompleted" class="toast">Quest completed 🎉 + 15xp </div>
         <div id="projectCompleted" class="toast">Quest completed 🎉 + 30xp </div>
         <div id="usernameChanged" class="toast">Username set as <span id="newUserName"></span> 💾</div>
         <div id="xpReset" class="toast">XP and Level successfully reseted ❌</div>
+        <div id="achievementUnlocked" class="toast">New achievement unlocked ! 🏆</div>
+        <div id="bronzeBorderUnlocked" class="toast">New Border Unlocked (bronze) 🥉 </div>
+        <div id="silverBorderUnlocked" class="toast">New Border Unlocked (silver) 🥈 </div>
+        <div id="goldBorderUnlocked" class="toast">New Border Unlocked (gold) 🥇 </div>
+        <div id="legendaryBorderUnlocked" class="toast">New Border Unlocked (legendary) 💎 </div>
     
     <div class="setUsername">
             <input type="text" placeholder="Set an username"class="usernameInput" id="usernameInput">
@@ -87,7 +101,18 @@
     </div>
     <button class="resetXP" onclick="resetXP()">Reset XP</button>
 
+    <div class="achievements">
+        <h1 class="titleAchievement">Achievements</h1>
+        <div class="firstAchievementHidden" id="achievementIcon">
+            <img src="assets/achievement.png" alt="" class="achievementIcon" >
+            
+        </div>
+        <div class="achievementTxtHidden" id="achievementTxt">
+            <h1 >Level 1</h1>
+        </div>
+        
 
+    </div>
 
 
 
